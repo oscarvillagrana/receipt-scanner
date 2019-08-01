@@ -1,10 +1,11 @@
 #!/usr/bin/python
-# Web Scraping With Python. pg.101
+
 
 #-------------------------------------------------------
-# Reading a PDF in preperation to turn scanned reciepts
-# into a database for analysis
+# Here I want to read PDFs to turn scanned reciepts 
+# into a pandas dataframe
 #-------------------------------------------------------
+
 
 
 # from urllib.request import urlopen
@@ -27,9 +28,14 @@ def readPDF(pdfFile):
     retstr.close()
     return content
 
-pdfFile = open(input("Enter a file to read: "))
 # pdfFile = urlopen("http://.pdf");
+pdfFile = open(input("Enter a file to read: "));
 outputString = readPDF(pdfFile)
 print(outputString)
 pdfFile.close()
 
+
+#-------------------------------------------------------------------
+# Now I need to turn this output and parse it into tables using tags
+# i.e. store, item, price, quantity
+#-------------------------------------------------------------------
