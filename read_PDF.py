@@ -2,7 +2,7 @@
 
 
 #-------------------------------------------------------
-# Here I want to read PDFs to turn scanned reciepts 
+# Here I want to read PDFs to turn scanned receipts 
 # into a pandas dataframe
 #-------------------------------------------------------
 
